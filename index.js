@@ -1,7 +1,3 @@
-require('app-module-path/register')
-
-require('dotenv').config()
-
-global.ROOT = __dirname
+require('./bootstrap')
 
 require('src/main')
