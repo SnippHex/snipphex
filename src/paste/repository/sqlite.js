@@ -1,9 +1,8 @@
-const promisify = require('promisify-node')
-const db = promisify(require('src/db'))
+const db = require('src/db')
 const pasteKeyCoder = require('src/paste/key-coder')
 
 async function getById(id) {
-  return db.get('SELECT id, title, visiblity FROM paste WHERE id = ?', [id])
+  return db.getAsync('SELECT id, title, visiblity FROM paste WHERE id = ?', [id])
 }
 
 async function getByKey(key) {
@@ -13,7 +12,7 @@ async function getByKey(key) {
 }
 
 async function create(data) {
-  return db.run('INSERT INTO paste SET title = ?, visiblity = ?, syntax_id = ?', [data.title, data.visibility, data.syntax_id])
+  return db.runAsync('INSERT INTO paste SET title = ?, visiblity = ?, syntax_id = ?', [data.title, data.visibility, data.syntax_id])
     .then(result => result.lastID)
 }
 

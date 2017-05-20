@@ -1,5 +1,8 @@
 const sqlite3 = require('sqlite3')
 const path = require('path')
+const Promise = require('bluebird')
+
+sqlite3.Database.prototype = Promise.promisifyAll(sqlite3.Database.prototype)
 
 const fileName = 'db.db'
 
