@@ -36,6 +36,7 @@
         "no-plusplus": "off",
         "no-mixed-operators": "off",
         "class-methods-use-this": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "import/no-unresolved": "off"
     }
 }
