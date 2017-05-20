@@ -2,6 +2,11 @@ const repo = require('./repository')
 const content = require('./content')
 const syntaxService = require('src/syntax/service')
 const keyCoder = require('./key-coder')
+const pygmentsGenerateHtml = require('src/pygments').generateHtml
+
+async function generateHtml(paste) {
+  return pygmentsGenerateHtml(content.generateFullPath(paste.id), 'monokai', paste.syntax.lexer)
+}
 
 module.exports = {
   repository: repo,
@@ -30,4 +35,5 @@ module.exports = {
 
   encodeId: keyCoder.encode,
   decodeKey: keyCoder.decode,
+  generateHtml,
 }

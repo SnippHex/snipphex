@@ -77,8 +77,8 @@ router.get('/paste/:key', async (req, res) => {
   }
 })
 
-router.get('/paste/:key/content/html', (req, res) => {
-  res.json({ error: { code: 0, message: 'Not yet implemented' } })
+router.get('/paste/:key/content/html', async (req, res) => {
+  res.send(await pasteService.generateHtml(await pasteService.getByKey(req.params.key).then(pasteService.includeSyntax)))
 })
 
 module.exports = router
