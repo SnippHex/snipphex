@@ -9,7 +9,7 @@ async function getById(id) {
 }
 
 async function create(data) {
-  return db.runAsync('INSERT INTO syntax SET name = ?, extension = ?', [data.name, data.extension])
+  return db.runAsync('INSERT INTO syntax (name, extension, lexer) VALUES (?, ?, ?)', [data.name, data.extension, data.lexer])
     .then(result => result.lastID)
 }
 
