@@ -23,4 +23,7 @@ module.exports = {
 
     return ++id
   },
+
+  codeMap,
+  base,
 }
