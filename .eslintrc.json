@@ -1,0 +1,41 @@
+{
+    "extends": [
+        "airbnb"
+    ],
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "spread": true,
+            "experimentalObjectRestSpread": true
+        },
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-underscore-dangle": "off",
+        "curly": [
+            "error",
+            "all"
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "newline-per-chained-call": "off",
+        "no-param-reassign": "off",
+        "no-use-before-define": "off",
+        "max-len": ["error", 160],
+        "arrow-body-style":"off",
+        "consistent-return": "off",
+        "no-plusplus": "off",
+        "no-mixed-operators": "off",
+        "class-methods-use-this": "off",
+        "import/no-extraneous-dependencies": "off"
+    }
+}
