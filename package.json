@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha tests/**/**.js"
+    "test": "mocha --require bootstrap.js tests/**/**.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,8 @@
     "app-module-path": "^2.2.0",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
+    "fs-extra": "^3.0.1",
+    "promisify-node": "^0.4.0",
     "sqlite3": "^3.1.8",
     "winston": "^2.3.1"
   },
