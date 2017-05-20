@@ -1,11 +1,11 @@
 const db = require('src/db')
 
 async function all() {
-  return db.allAsync('SELECT id, name, extension from syntax').then(rows => rows)
+  return db.allAsync('SELECT id, name, extension, lexer from syntax').then(rows => rows)
 }
 
 async function getById(id) {
-  return db.getAsync('SELECT id, name, extension FROM syntax WHERE id = ?', [id])
+  return db.getAsync('SELECT id, name, extension, lexer FROM syntax WHERE id = ?', [id])
 }
 
 async function create(data) {
