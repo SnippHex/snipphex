@@ -13,7 +13,7 @@ async function getByKey(key) {
 
 async function create(data) {
   return new Promise((resolve, reject) => {
-    db.run('INSERT INTO syntax (title, visiblity, syntax_id) VALUES (?, ?, ?)', [data.title, data.visibility, data.syntax_id], function createCb(err) {
+    db.run('INSERT INTO syntax (title, visiblity, syntax_id) VALUES (?, ?, ?)', [data.title, data.visibility, data.syntaxId], function createCb(err) {
       if (err) {
         return reject(err)
       }
