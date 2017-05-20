@@ -1,6 +1,10 @@
 const promisify = require('promisify-node')
 const db = promisify(require('src/db'))
 
+async function all() {
+  return db.all('SELECT id, name, extension from syntax')
+}
+
 async function getById(id) {
   return db.all('SELECT id, name, extension FROM syntax WHERE id = ?', [id])
 }
@@ -11,6 +15,7 @@ async function create(data) {
 }
 
 module.exports = {
+  all,
   getById,
   create,
 }
