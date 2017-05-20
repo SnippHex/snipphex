@@ -1,9 +1,10 @@
 const express = require('express')
+const syntaxService = require('src/syntax/service')
 
 const router = express.Router()
 
-router.get('/syntax', (req, res) => {
-  res.json({ error: { code: 0, message: 'Not yet implemented' } })
+router.get('/syntax', async (req, res) => {
+  res.json(await syntaxService.all())
 })
 
 module.exports = router
