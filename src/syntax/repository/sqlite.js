@@ -9,8 +9,15 @@ async function getById(id) {
 }
 
 async function create(data) {
-  return db.runAsync('INSERT INTO syntax (name, extension, lexer) VALUES (?, ?, ?)', [data.name, data.extension, data.lexer])
-    .then(result => result.lastID)
+  return new Promise((resolve, reject) => {
+    db.run('INSERT INTO syntax (name, extension, lexer) VALUES (?, ?, ?)', [data.name, data.extension, data.lexer], function createCb(err) {
+      if (err) {
+        return reject(err)
+      }
+
+      resolve(this.lastID)
+    })
+  })
 }
 
 module.exports = {

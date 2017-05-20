@@ -12,8 +12,15 @@ async function getByKey(key) {
 }
 
 async function create(data) {
-  return db.runAsync('INSERT INTO paste SET title = ?, visiblity = ?, syntax_id = ?', [data.title, data.visibility, data.syntax_id])
-    .then(result => result.lastID)
+  return new Promise((resolve, reject) => {
+    db.run('INSERT INTO syntax (title, visiblity, syntax_id) VALUES (?, ?, ?)', [data.title, data.visibility, data.syntax_id], function createCb(err) {
+      if (err) {
+        return reject(err)
+      }
+
+      resolve(this.lastID)
+    })
+  })
 }
 
 module.exports = {
