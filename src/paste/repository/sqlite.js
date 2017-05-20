@@ -5,7 +5,10 @@ const pasteKeyCoder = require('src/paste/key-coder')
 async function getById(id) {
   return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt FROM paste WHERE id = ?', [id])
     .then((row) => {
-      row.createdAt = moment.utc(row.createdAt).unix()
+      if (row) {
+        row.createdAt = moment.utc(row.createdAt).unix()
+      }
+
       return row
     })
 }
