@@ -38,9 +38,16 @@ async function put(id, content) {
   return fse.outputFile(filePath, content)
 }
 
+async function size(id) {
+  const filePath = generateFullPath(id)
+
+  return fse.stat(filePath).then(stats => stats.size)
+}
+
 module.exports = {
   get,
   put,
+  size,
   generatePath,
   generateFullPath,
 }

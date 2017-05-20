@@ -68,6 +68,7 @@ router.get('/paste/:key', async (req, res) => {
 
   try {
     const paste = await pasteService.getByKey(key).then(pasteService.includeSyntax)
+    paste.size = await pasteService.getSizeOfContent(paste.id)
 
     res.json({ data: paste })
   } catch (e) {

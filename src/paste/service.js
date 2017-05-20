@@ -10,6 +10,7 @@ module.exports = {
   getById: repo.getById,
   getByKey: repo.getByKey,
   create: repo.create,
+  getSizeOfContent: content.size,
   getContent: content.get,
   putContent: content.put,
 
