@@ -2,7 +2,7 @@ const db = require('src/db')
 const pasteKeyCoder = require('src/paste/key-coder')
 
 async function getById(id) {
-  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId FROM paste WHERE id = ?', [id])
+  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt FROM paste WHERE id = ?', [id])
 }
 
 async function getByKey(key) {
