@@ -6,7 +6,7 @@ async function all() {
 }
 
 async function getById(id) {
-  return db.all('SELECT id, name, extension FROM syntax WHERE id = ?', [id])
+  return db.get('SELECT id, name, extension FROM syntax WHERE id = ?', [id])
 }
 
 async function create(data) {

@@ -3,7 +3,7 @@ const db = promisify(require('src/db'))
 const pasteKeyCoder = require('src/paste/key-coder')
 
 async function getById(id) {
-  return db.all('SELECT id, title, visiblity FROM paste WHERE id = ?', [id])
+  return db.get('SELECT id, title, visiblity FROM paste WHERE id = ?', [id])
 }
 
 async function getByKey(key) {
