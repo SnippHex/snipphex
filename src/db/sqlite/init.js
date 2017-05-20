@@ -8,7 +8,7 @@ module.exports = async function init(db) {
 
     db.runAsync('CREATE TABLE IF NOT EXISTS `syntax`' +
       '(`id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,' +
-      '`name` TEXT NOT NULL DEFAULT \'Just a cp\',' +
+      '`name` TEXT UNIQUE NOT NULL DEFAULT \'Just a cp\',' +
       '`extension` TEXT NOT NULL,' +
       '`lexer` TEXT NOT NULL )'),
   ])
