@@ -9,7 +9,8 @@ async function getThemeCss(name) {
   return execPygmentize(`-f html -S ${name} -a .${wrapperClassName}`)
 }
 
-async function generateHtml(filePath, style, lexer) {
+async function generateHtml(filePath, style, lexerArg) {
+  const lexer = lexerArg || 'text'
   return execPygmentize(`-O style=${style} -l ${lexer} -f ${formatterFile} -x ${filePath}`)
 }
 

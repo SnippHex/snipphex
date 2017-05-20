@@ -4,7 +4,7 @@ module.exports = async function init(db) {
       '(`id` INTEGER PRIMARY KEY AUTOINCREMENT,' +
       '`title` TEXT NOT NULL DEFAULT \'cp\',' +
       '`visibility` INTEGER NOT NULL DEFAULT 0,' +
-      '`syntax_id` INTEGER NOT NULL DEFAULT 0,' +
+      '`syntax_id` INTEGER NOT NULL,' +
       '`created_at` INTEGER NOT NULL DEFAULT CURRENT_TIMESTAMP )'),
 
     db.runAsync('CREATE TABLE IF NOT EXISTS `syntax`' +

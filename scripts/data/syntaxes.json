@@ -1,5 +1,10 @@
 [
   {
+    "name": "None",
+    "extension": "txt",
+    "lexer": "text"
+  },
+  {
     "name": "C",
     "extension": "c",
     "lexer": "c"

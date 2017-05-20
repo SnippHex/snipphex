@@ -8,7 +8,7 @@ const router = express.Router()
 router.put('/paste', async (req, res) => {
   const title = req.body.title
   const visibility = req.body.visibility
-  const syntaxId = req.body.syntaxId
+  const syntaxId = req.body.syntaxId || 1
   const content = req.body.content
 
   // TODO: Title constraint / default
