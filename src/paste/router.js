@@ -67,18 +67,27 @@ router.get('/paste/:key', async (req, res) => {
   const key = req.params.key
 
   try {
-    const paste = await pasteService.getByKey(key).then(pasteService.includeSyntax)
+    const paste = await pasteService.getByKey(key)
+    if (!paste) {
+      return res.status(404).json({ code: 404, message: 'Paste not found' })
+    }
+    await pasteService.includeSyntax(paste)
     paste.size = await pasteService.getSizeOfContent(paste.id)
 
     res.json({ data: paste })
   } catch (e) {
     logger.error(e)
-    res.status(404).json({ code: 404, message: 'Paste not found' })
+    res.status(500).json({ code: 500, message: 'Failed to fetch paste' })
   }
 })
 
 router.get('/paste/:key/content/html', async (req, res) => {
-  res.send(await pasteService.generateHtml(await pasteService.getByKey(req.params.key).then(pasteService.includeSyntax)))
+  const paste = await pasteService.getByKey(req.params.key)
+  if (!paste) {
+    return res.status(404).json({ code: 404, message: 'Paste not found' })
+  }
+  await pasteService.includeSyntax(paste)
+  res.send(await pasteService.generateHtml(paste))
 })
 
 module.exports = router
