@@ -1,0 +1,7 @@
+[
+  {
+    "name": "C",
+    "extension": "c",
+    "lexer": "c_like"
+  }
+]
