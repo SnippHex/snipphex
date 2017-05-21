@@ -19,5 +19,12 @@ async function all() {
 
 module.exports = {
   all,
-  getCss: pygments.getThemeCss,
+  getCss: (name) => {
+    name = name.toLowerCase()
+    if (!all()[name]) {
+      return null
+    }
+
+    return pygments.getThemeCss(name)
+  },
 }
