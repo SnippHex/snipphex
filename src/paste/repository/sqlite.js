@@ -2,15 +2,18 @@ const moment = require('moment')
 const db = require('src/db')
 const pasteKeyCoder = require('src/paste/key-coder')
 
-async function getById(id) {
-  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt FROM paste WHERE id = ?', [id])
-    .then((row) => {
-      if (row) {
-        row.createdAt = moment.utc(row.createdAt).unix()
-      }
+function mapRow(row) {
+  if (row) {
+    row.createdAt = moment.utc(row.createdAt).unix()
+  }
 
-      return row
-    })
+  row.key = pasteKeyCoder.encode(row.id)
+
+  return row
+}
+
+async function getById(id) {
+  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt, size FROM paste WHERE id = ?', [id]).then(mapRow)
 }
 
 async function getByKey(key) {
