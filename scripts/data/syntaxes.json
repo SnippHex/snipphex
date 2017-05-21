@@ -1,12 +1,1737 @@
-[
-  {
-    "name": "None",
-    "extension": "txt",
-    "lexer": "text"
-  },
-  {
-    "name": "C",
-    "extension": "c",
-    "lexer": "c"
-  }
-]
+[{
+  "name": "ABAP",
+  "extension": "abap",
+  "lexer": "abap"
+}, {
+  "name": "ABNF",
+  "extension": "abnf",
+  "lexer": "abnf"
+}, {
+  "name": "Ada",
+  "extension": "adb",
+  "lexer": "ada"
+}, {
+  "name": "ADL",
+  "extension": "adl",
+  "lexer": "adl"
+}, {
+  "name": "Agda",
+  "extension": "agda",
+  "lexer": "agda"
+}, {
+  "name": "Aheui",
+  "extension": "aheui",
+  "lexer": "aheui"
+}, {
+  "name": "autohotkey",
+  "extension": "ahk",
+  "lexer": "ahk"
+}, {
+  "name": "Alloy",
+  "extension": "als",
+  "lexer": "alloy"
+}, {
+  "name": "Ampl",
+  "extension": "run",
+  "lexer": "ampl"
+}, {
+  "name": "ANTLR With ActionScript Target",
+  "extension": "G",
+  "lexer": "antlr-as"
+}, {
+  "name": "ANTLR With CPP Target",
+  "extension": "G",
+  "lexer": "antlr-cpp"
+}, {
+  "name": "ANTLR With C# Target",
+  "extension": "G",
+  "lexer": "antlr-csharp"
+}, {
+  "name": "ANTLR With Java Target",
+  "extension": "G",
+  "lexer": "antlr-java"
+}, {
+  "name": "ANTLR With ObjectiveC Target",
+  "extension": "G",
+  "lexer": "antlr-objc"
+}, {
+  "name": "ANTLR With Perl Target",
+  "extension": "G",
+  "lexer": "antlr-perl"
+}, {
+  "name": "ANTLR With Python Target",
+  "extension": "G",
+  "lexer": "antlr-python"
+}, {
+  "name": "ANTLR With Ruby Target",
+  "extension": "G",
+  "lexer": "antlr-ruby"
+}, {
+  "name": "ANTLR",
+  "extension": "",
+  "lexer": "antlr"
+}, {
+  "name": "ApacheConf",
+  "extension": "",
+  "lexer": "apacheconf"
+}, {
+  "name": "APL",
+  "extension": "apl",
+  "lexer": "apl"
+}, {
+  "name": "AppleScript",
+  "extension": "applescript",
+  "lexer": "applescript"
+}, {
+  "name": "Arduino",
+  "extension": "ino",
+  "lexer": "arduino"
+}, {
+  "name": "ActionScript",
+  "extension": "as",
+  "lexer": "as"
+}, {
+  "name": "ActionScript 3",
+  "extension": "as",
+  "lexer": "as3"
+}, {
+  "name": "AspectJ",
+  "extension": "aj",
+  "lexer": "aspectj"
+}, {
+  "name": "aspx-cs",
+  "extension": "aspx",
+  "lexer": "aspx-cs"
+}, {
+  "name": "aspx-vb",
+  "extension": "aspx",
+  "lexer": "aspx-vb"
+}, {
+  "name": "Asymptote",
+  "extension": "asy",
+  "lexer": "asy"
+}, {
+  "name": "AmbientTalk",
+  "extension": "at",
+  "lexer": "at"
+}, {
+  "name": "AutoIt",
+  "extension": "au3",
+  "lexer": "autoit"
+}, {
+  "name": "Awk",
+  "extension": "awk",
+  "lexer": "awk"
+}, {
+  "name": "Base Makefile",
+  "extension": "",
+  "lexer": "basemake"
+}, {
+  "name": "Bash",
+  "extension": "sh",
+  "lexer": "bash"
+}, {
+  "name": "Batchfile",
+  "extension": "bat",
+  "lexer": "bat"
+}, {
+  "name": "BBCode",
+  "extension": "",
+  "lexer": "bbcode"
+}, {
+  "name": "BC",
+  "extension": "bc",
+  "lexer": "bc"
+}, {
+  "name": "Befunge",
+  "extension": "befunge",
+  "lexer": "befunge"
+}, {
+  "name": "BibTeX",
+  "extension": "bib",
+  "lexer": "bib"
+}, {
+  "name": "BlitzBasic",
+  "extension": "bb",
+  "lexer": "blitzbasic"
+}, {
+  "name": "BlitzMax",
+  "extension": "bmx",
+  "lexer": "blitzmax"
+}, {
+  "name": "BNF",
+  "extension": "bnf",
+  "lexer": "bnf"
+}, {
+  "name": "Boo",
+  "extension": "boo",
+  "lexer": "boo"
+}, {
+  "name": "Boogie",
+  "extension": "bpl",
+  "lexer": "boogie"
+}, {
+  "name": "Brainfuck",
+  "extension": "bf",
+  "lexer": "brainfuck"
+}, {
+  "name": "Bro",
+  "extension": "bro",
+  "lexer": "bro"
+}, {
+  "name": "BST",
+  "extension": "bst",
+  "lexer": "bst"
+}, {
+  "name": "BUGS",
+  "extension": "bug",
+  "lexer": "bugs"
+}, {
+  "name": "c-objdump",
+  "extension": "c-objdump",
+  "lexer": "c-objdump"
+}, {
+  "name": "C",
+  "extension": "c",
+  "lexer": "c"
+}, {
+  "name": "ca65 assembler",
+  "extension": "s",
+  "lexer": "ca65"
+}, {
+  "name": "cADL",
+  "extension": "cadl",
+  "lexer": "cadl"
+}, {
+  "name": "CAmkES",
+  "extension": "camkes",
+  "lexer": "camkes"
+}, {
+  "name": "CapDL",
+  "extension": "cdl",
+  "lexer": "capdl"
+}, {
+  "name": "Cap'n Proto",
+  "extension": "capnp",
+  "lexer": "capnp"
+}, {
+  "name": "CBM BASIC V2",
+  "extension": "bas",
+  "lexer": "cbmbas"
+}, {
+  "name": "Ceylon",
+  "extension": "ceylon",
+  "lexer": "ceylon"
+}, {
+  "name": "Coldfusion CFC",
+  "extension": "cfc",
+  "lexer": "cfc"
+}, {
+  "name": "CFEngine3",
+  "extension": "cf",
+  "lexer": "cfengine3"
+}, {
+  "name": "Coldfusion HTML",
+  "extension": "cfm",
+  "lexer": "cfm"
+}, {
+  "name": "cfstatement",
+  "extension": "",
+  "lexer": "cfs"
+}, {
+  "name": "ChaiScript",
+  "extension": "chai",
+  "lexer": "chai"
+}, {
+  "name": "Chapel",
+  "extension": "chpl",
+  "lexer": "chapel"
+}, {
+  "name": "Cheetah",
+  "extension": "tmpl",
+  "lexer": "cheetah"
+}, {
+  "name": "Cirru",
+  "extension": "cirru",
+  "lexer": "cirru"
+}, {
+  "name": "Clay",
+  "extension": "clay",
+  "lexer": "clay"
+}, {
+  "name": "Clean",
+  "extension": "icl",
+  "lexer": "clean"
+}, {
+  "name": "Clojure",
+  "extension": "clj",
+  "lexer": "clojure"
+}, {
+  "name": "ClojureScript",
+  "extension": "cljs",
+  "lexer": "clojurescript"
+}, {
+  "name": "CMake",
+  "extension": "cmake",
+  "lexer": "cmake"
+}, {
+  "name": "COBOL",
+  "extension": "cob",
+  "lexer": "cobol"
+}, {
+  "name": "COBOLFree",
+  "extension": "cbl",
+  "lexer": "cobolfree"
+}, {
+  "name": "CoffeeScript",
+  "extension": "coffee",
+  "lexer": "coffee-script"
+}, {
+  "name": "Common Lisp",
+  "extension": "cl",
+  "lexer": "common-lisp"
+}, {
+  "name": "Component Pascal",
+  "extension": "cp",
+  "lexer": "componentpascal"
+}, {
+  "name": "Bash Session",
+  "extension": "sh-session",
+  "lexer": "console"
+}, {
+  "name": "Debian Control file",
+  "extension": "",
+  "lexer": "control"
+}, {
+  "name": "Coq",
+  "extension": "v",
+  "lexer": "coq"
+}, {
+  "name": "C++",
+  "extension": "cpp",
+  "lexer": "cpp"
+}, {
+  "name": "cpp-objdump",
+  "extension": "cpp-objdump",
+  "lexer": "cpp-objdump"
+}, {
+  "name": "CPSA",
+  "extension": "cpsa",
+  "lexer": "cpsa"
+}, {
+  "name": "Crystal",
+  "extension": "cr",
+  "lexer": "cr"
+}, {
+  "name": "Crmsh",
+  "extension": "crmsh",
+  "lexer": "crmsh"
+}, {
+  "name": "Croc",
+  "extension": "croc",
+  "lexer": "croc"
+}, {
+  "name": "Cryptol",
+  "extension": "cry",
+  "lexer": "cryptol"
+}, {
+  "name": "C#",
+  "extension": "cs",
+  "lexer": "csharp"
+}, {
+  "name": "Csound Orchestra",
+  "extension": "orc",
+  "lexer": "csound"
+}, {
+  "name": "Csound Document",
+  "extension": "csd",
+  "lexer": "csound-document"
+}, {
+  "name": "Csound Score",
+  "extension": "sco",
+  "lexer": "csound-score"
+}, {
+  "name": "CSS+Django/Jinja",
+  "extension": "",
+  "lexer": "css+django"
+}, {
+  "name": "CSS+Ruby",
+  "extension": "",
+  "lexer": "css+erb"
+}, {
+  "name": "CSS+Genshi Text",
+  "extension": "",
+  "lexer": "css+genshitext"
+}, {
+  "name": "CSS+Lasso",
+  "extension": "",
+  "lexer": "css+lasso"
+}, {
+  "name": "CSS+Mako",
+  "extension": "",
+  "lexer": "css+mako"
+}, {
+  "name": "CSS+mozpreproc",
+  "extension": "css",
+  "lexer": "css+mozpreproc"
+}, {
+  "name": "CSS+Myghty",
+  "extension": "",
+  "lexer": "css+myghty"
+}, {
+  "name": "CSS+PHP",
+  "extension": "",
+  "lexer": "css+php"
+}, {
+  "name": "CSS+Smarty",
+  "extension": "",
+  "lexer": "css+smarty"
+}, {
+  "name": "CSS",
+  "extension": "css",
+  "lexer": "css"
+}, {
+  "name": "Gherkin",
+  "extension": "feature",
+  "lexer": "cucumber"
+}, {
+  "name": "CUDA",
+  "extension": "cu",
+  "lexer": "cuda"
+}, {
+  "name": "Cypher",
+  "extension": "cyp",
+  "lexer": "cypher"
+}, {
+  "name": "Cython",
+  "extension": "pyx",
+  "lexer": "cython"
+}, {
+  "name": "d-objdump",
+  "extension": "d-objdump",
+  "lexer": "d-objdump"
+}, {
+  "name": "D",
+  "extension": "d",
+  "lexer": "d"
+}, {
+  "name": "Dart",
+  "extension": "dart",
+  "lexer": "dart"
+}, {
+  "name": "Delphi",
+  "extension": "pas",
+  "lexer": "delphi"
+}, {
+  "name": "dg",
+  "extension": "dg",
+  "lexer": "dg"
+}, {
+  "name": "Diff",
+  "extension": "diff",
+  "lexer": "diff"
+}, {
+  "name": "Django/Jinja",
+  "extension": "",
+  "lexer": "django"
+}, {
+  "name": "Docker",
+  "extension": "docker",
+  "lexer": "docker"
+}, {
+  "name": "MSDOS Session",
+  "extension": "",
+  "lexer": "doscon"
+}, {
+  "name": "Darcs Patch",
+  "extension": "dpatch",
+  "lexer": "dpatch"
+}, {
+  "name": "DTD",
+  "extension": "dtd",
+  "lexer": "dtd"
+}, {
+  "name": "Duel",
+  "extension": "duel",
+  "lexer": "duel"
+}, {
+  "name": "Dylan session",
+  "extension": "dylan-console",
+  "lexer": "dylan-console"
+}, {
+  "name": "DylanLID",
+  "extension": "lid",
+  "lexer": "dylan-lid"
+}, {
+  "name": "Dylan",
+  "extension": "dylan",
+  "lexer": "dylan"
+}, {
+  "name": "Earl Grey",
+  "extension": "eg",
+  "lexer": "earl-grey"
+}, {
+  "name": "Easytrieve",
+  "extension": "ezt",
+  "lexer": "easytrieve"
+}, {
+  "name": "EBNF",
+  "extension": "ebnf",
+  "lexer": "ebnf"
+}, {
+  "name": "eC",
+  "extension": "ec",
+  "lexer": "ec"
+}, {
+  "name": "ECL",
+  "extension": "ecl",
+  "lexer": "ecl"
+}, {
+  "name": "Eiffel",
+  "extension": "e",
+  "lexer": "eiffel"
+}, {
+  "name": "Elixir",
+  "extension": "ex",
+  "lexer": "elixir"
+}, {
+  "name": "Elm",
+  "extension": "elm",
+  "lexer": "elm"
+}, {
+  "name": "EmacsLisp",
+  "extension": "el",
+  "lexer": "emacs"
+}, {
+  "name": "ERB",
+  "extension": "",
+  "lexer": "erb"
+}, {
+  "name": "Erlang erl session",
+  "extension": "erl-sh",
+  "lexer": "erl"
+}, {
+  "name": "Erlang",
+  "extension": "erl",
+  "lexer": "erlang"
+}, {
+  "name": "Evoque",
+  "extension": "evoque",
+  "lexer": "evoque"
+}, {
+  "name": "xtlang",
+  "extension": "xtm",
+  "lexer": "extempore"
+}, {
+  "name": "Ezhil",
+  "extension": "n",
+  "lexer": "ezhil"
+}, {
+  "name": "Factor",
+  "extension": "factor",
+  "lexer": "factor"
+}, {
+  "name": "Fantom",
+  "extension": "fan",
+  "lexer": "fan"
+}, {
+  "name": "Fancy",
+  "extension": "fy",
+  "lexer": "fancy"
+}, {
+  "name": "Felix",
+  "extension": "flx",
+  "lexer": "felix"
+}, {
+  "name": "Fish",
+  "extension": "fish",
+  "lexer": "fish"
+}, {
+  "name": "Flatline",
+  "extension": "",
+  "lexer": "flatline"
+}, {
+  "name": "Forth",
+  "extension": "frt",
+  "lexer": "forth"
+}, {
+  "name": "Fortran",
+  "extension": "f03",
+  "lexer": "fortran"
+}, {
+  "name": "FortranFixed",
+  "extension": "f",
+  "lexer": "fortranfixed"
+}, {
+  "name": "FoxPro",
+  "extension": "PRG",
+  "lexer": "foxpro"
+}, {
+  "name": "FSharp",
+  "extension": "fs",
+  "lexer": "fsharp"
+}, {
+  "name": "GAP",
+  "extension": "g",
+  "lexer": "gap"
+}, {
+  "name": "GAS",
+  "extension": "s",
+  "lexer": "gas"
+}, {
+  "name": "Genshi",
+  "extension": "kid",
+  "lexer": "genshi"
+}, {
+  "name": "Genshi Text",
+  "extension": "",
+  "lexer": "genshitext"
+}, {
+  "name": "GLSL",
+  "extension": "vert",
+  "lexer": "glsl"
+}, {
+  "name": "Gnuplot",
+  "extension": "plot",
+  "lexer": "gnuplot"
+}, {
+  "name": "Go",
+  "extension": "go",
+  "lexer": "go"
+}, {
+  "name": "Golo",
+  "extension": "golo",
+  "lexer": "golo"
+}, {
+  "name": "GoodData-CL",
+  "extension": "gdc",
+  "lexer": "gooddata-cl"
+}, {
+  "name": "Gosu",
+  "extension": "gs",
+  "lexer": "gosu"
+}, {
+  "name": "Groff",
+  "extension": "[1234567]",
+  "lexer": "groff"
+}, {
+  "name": "Groovy",
+  "extension": "groovy",
+  "lexer": "groovy"
+}, {
+  "name": "Gosu Template",
+  "extension": "gst",
+  "lexer": "gst"
+}, {
+  "name": "Haml",
+  "extension": "haml",
+  "lexer": "haml"
+}, {
+  "name": "Handlebars",
+  "extension": "",
+  "lexer": "handlebars"
+}, {
+  "name": "Haskell",
+  "extension": "hs",
+  "lexer": "haskell"
+}, {
+  "name": "Hxml",
+  "extension": "hxml",
+  "lexer": "haxeml"
+}, {
+  "name": "Hexdump",
+  "extension": "",
+  "lexer": "hexdump"
+}, {
+  "name": "HSAIL",
+  "extension": "hsail",
+  "lexer": "hsail"
+}, {
+  "name": "HTML+Cheetah",
+  "extension": "",
+  "lexer": "html+cheetah"
+}, {
+  "name": "HTML+Django/Jinja",
+  "extension": "",
+  "lexer": "html+django"
+}, {
+  "name": "HTML+Evoque",
+  "extension": "html",
+  "lexer": "html+evoque"
+}, {
+  "name": "HTML+Genshi",
+  "extension": "",
+  "lexer": "html+genshi"
+}, {
+  "name": "HTML+Handlebars",
+  "extension": "handlebars",
+  "lexer": "html+handlebars"
+}, {
+  "name": "HTML+Lasso",
+  "extension": "",
+  "lexer": "html+lasso"
+}, {
+  "name": "HTML+Mako",
+  "extension": "",
+  "lexer": "html+mako"
+}, {
+  "name": "HTML+Myghty",
+  "extension": "",
+  "lexer": "html+myghty"
+}, {
+  "name": "HTML + Angular2",
+  "extension": "ng2",
+  "lexer": "html+ng2"
+}, {
+  "name": "HTML+PHP",
+  "extension": "phtml",
+  "lexer": "html+php"
+}, {
+  "name": "HTML+Smarty",
+  "extension": "",
+  "lexer": "html+smarty"
+}, {
+  "name": "HTML+Twig",
+  "extension": "twig",
+  "lexer": "html+twig"
+}, {
+  "name": "HTML+Velocity",
+  "extension": "",
+  "lexer": "html+velocity"
+}, {
+  "name": "HTML",
+  "extension": "html",
+  "lexer": "html"
+}, {
+  "name": "HTTP",
+  "extension": "",
+  "lexer": "http"
+}, {
+  "name": "Haxe",
+  "extension": "hx",
+  "lexer": "hx"
+}, {
+  "name": "Hybris",
+  "extension": "hy",
+  "lexer": "hybris"
+}, {
+  "name": "Hy",
+  "extension": "hy",
+  "lexer": "hylang"
+}, {
+  "name": "Inform 6 template",
+  "extension": "i6t",
+  "lexer": "i6t"
+}, {
+  "name": "IDL",
+  "extension": "pro",
+  "lexer": "idl"
+}, {
+  "name": "Idris",
+  "extension": "idr",
+  "lexer": "idris"
+}, {
+  "name": "Elixir iex session",
+  "extension": "",
+  "lexer": "iex"
+}, {
+  "name": "Igor",
+  "extension": "ipf",
+  "lexer": "igor"
+}, {
+  "name": "Inform 6",
+  "extension": "inf",
+  "lexer": "inform6"
+}, {
+  "name": "Inform 7",
+  "extension": "ni",
+  "lexer": "inform7"
+}, {
+  "name": "INI",
+  "extension": "ini",
+  "lexer": "ini"
+}, {
+  "name": "Io",
+  "extension": "io",
+  "lexer": "io"
+}, {
+  "name": "Ioke",
+  "extension": "ik",
+  "lexer": "ioke"
+}, {
+  "name": "IRC logs",
+  "extension": "weechatlog",
+  "lexer": "irc"
+}, {
+  "name": "Isabelle",
+  "extension": "thy",
+  "lexer": "isabelle"
+}, {
+  "name": "J",
+  "extension": "ijs",
+  "lexer": "j"
+}, {
+  "name": "JAGS",
+  "extension": "jag",
+  "lexer": "jags"
+}, {
+  "name": "Jasmin",
+  "extension": "j",
+  "lexer": "jasmin"
+}, {
+  "name": "Java",
+  "extension": "java",
+  "lexer": "java"
+}, {
+  "name": "Javascript+mozpreproc",
+  "extension": "js",
+  "lexer": "javascript+mozpreproc"
+}, {
+  "name": "JCL",
+  "extension": "jcl",
+  "lexer": "jcl"
+}, {
+  "name": "Julia console",
+  "extension": "",
+  "lexer": "jlcon"
+}, {
+  "name": "JavaScript+Cheetah",
+  "extension": "",
+  "lexer": "js+cheetah"
+}, {
+  "name": "JavaScript+Django/Jinja",
+  "extension": "",
+  "lexer": "js+django"
+}, {
+  "name": "JavaScript+Ruby",
+  "extension": "",
+  "lexer": "js+erb"
+}, {
+  "name": "JavaScript+Genshi Text",
+  "extension": "",
+  "lexer": "js+genshitext"
+}, {
+  "name": "JavaScript+Lasso",
+  "extension": "",
+  "lexer": "js+lasso"
+}, {
+  "name": "JavaScript+Mako",
+  "extension": "",
+  "lexer": "js+mako"
+}, {
+  "name": "JavaScript+Myghty",
+  "extension": "",
+  "lexer": "js+myghty"
+}, {
+  "name": "JavaScript+PHP",
+  "extension": "",
+  "lexer": "js+php"
+}, {
+  "name": "JavaScript+Smarty",
+  "extension": "",
+  "lexer": "js+smarty"
+}, {
+  "name": "JavaScript",
+  "extension": "js",
+  "lexer": "js"
+}, {
+  "name": "JSGF",
+  "extension": "jsgf",
+  "lexer": "jsgf"
+}, {
+  "name": "JSONBareObject",
+  "extension": "",
+  "lexer": "json-object"
+}, {
+  "name": "JSON",
+  "extension": "json",
+  "lexer": "json"
+}, {
+  "name": "JSON-LD",
+  "extension": "jsonld",
+  "lexer": "jsonld"
+}, {
+  "name": "Java Server Page",
+  "extension": "jsp",
+  "lexer": "jsp"
+}, {
+  "name": "Julia",
+  "extension": "jl",
+  "lexer": "julia"
+}, {
+  "name": "Juttle",
+  "extension": "juttle",
+  "lexer": "juttle"
+}, {
+  "name": "Kal",
+  "extension": "kal",
+  "lexer": "kal"
+}, {
+  "name": "Kconfig",
+  "extension": "",
+  "lexer": "kconfig"
+}, {
+  "name": "Koka",
+  "extension": "kk",
+  "lexer": "koka"
+}, {
+  "name": "Kotlin",
+  "extension": "kt",
+  "lexer": "kotlin"
+}, {
+  "name": "Literate Agda",
+  "extension": "lagda",
+  "lexer": "lagda"
+}, {
+  "name": "Lasso",
+  "extension": "lasso",
+  "lexer": "lasso"
+}, {
+  "name": "Literate Cryptol",
+  "extension": "lcry",
+  "lexer": "lcry"
+}, {
+  "name": "Lean",
+  "extension": "lean",
+  "lexer": "lean"
+}, {
+  "name": "LessCss",
+  "extension": "less",
+  "lexer": "less"
+}, {
+  "name": "Literate Haskell",
+  "extension": "lhs",
+  "lexer": "lhs"
+}, {
+  "name": "Literate Idris",
+  "extension": "lidr",
+  "lexer": "lidr"
+}, {
+  "name": "Lighttpd configuration file",
+  "extension": "",
+  "lexer": "lighty"
+}, {
+  "name": "Limbo",
+  "extension": "b",
+  "lexer": "limbo"
+}, {
+  "name": "liquid",
+  "extension": "liquid",
+  "lexer": "liquid"
+}, {
+  "name": "LiveScript",
+  "extension": "ls",
+  "lexer": "live-script"
+}, {
+  "name": "LLVM",
+  "extension": "ll",
+  "lexer": "llvm"
+}, {
+  "name": "Logos",
+  "extension": "x",
+  "lexer": "logos"
+}, {
+  "name": "Logtalk",
+  "extension": "lgt",
+  "lexer": "logtalk"
+}, {
+  "name": "LSL",
+  "extension": "lsl",
+  "lexer": "lsl"
+}, {
+  "name": "Lua",
+  "extension": "lua",
+  "lexer": "lua"
+}, {
+  "name": "Makefile",
+  "extension": "mak",
+  "lexer": "make"
+}, {
+  "name": "Mako",
+  "extension": "mao",
+  "lexer": "mako"
+}, {
+  "name": "MAQL",
+  "extension": "maql",
+  "lexer": "maql"
+}, {
+  "name": "Mask",
+  "extension": "mask",
+  "lexer": "mask"
+}, {
+  "name": "Mason",
+  "extension": "m",
+  "lexer": "mason"
+}, {
+  "name": "Mathematica",
+  "extension": "nb",
+  "lexer": "mathematica"
+}, {
+  "name": "Matlab",
+  "extension": "m",
+  "lexer": "matlab"
+}, {
+  "name": "Matlab session",
+  "extension": "",
+  "lexer": "matlabsession"
+}, {
+  "name": "markdown",
+  "extension": "md",
+  "lexer": "md"
+}, {
+  "name": "MiniD",
+  "extension": "",
+  "lexer": "minid"
+}, {
+  "name": "Modelica",
+  "extension": "mo",
+  "lexer": "modelica"
+}, {
+  "name": "Modula-2",
+  "extension": "def",
+  "lexer": "modula2"
+}, {
+  "name": "Monkey",
+  "extension": "monkey",
+  "lexer": "monkey"
+}, {
+  "name": "Monte",
+  "extension": "mt",
+  "lexer": "monte"
+}, {
+  "name": "MOOCode",
+  "extension": "moo",
+  "lexer": "moocode"
+}, {
+  "name": "MoonScript",
+  "extension": "moon",
+  "lexer": "moon"
+}, {
+  "name": "mozhashpreproc",
+  "extension": "",
+  "lexer": "mozhashpreproc"
+}, {
+  "name": "mozpercentpreproc",
+  "extension": "",
+  "lexer": "mozpercentpreproc"
+}, {
+  "name": "MQL",
+  "extension": "mq4",
+  "lexer": "mql"
+}, {
+  "name": "Mscgen",
+  "extension": "msc",
+  "lexer": "mscgen"
+}, {
+  "name": "MuPAD",
+  "extension": "mu",
+  "lexer": "mupad"
+}, {
+  "name": "MXML",
+  "extension": "mxml",
+  "lexer": "mxml"
+}, {
+  "name": "Myghty",
+  "extension": "myt",
+  "lexer": "myghty"
+}, {
+  "name": "MySQL",
+  "extension": "",
+  "lexer": "mysql"
+}, {
+  "name": "NASM",
+  "extension": "asm",
+  "lexer": "nasm"
+}, {
+  "name": "NCL",
+  "extension": "ncl",
+  "lexer": "ncl"
+}, {
+  "name": "Nemerle",
+  "extension": "n",
+  "lexer": "nemerle"
+}, {
+  "name": "nesC",
+  "extension": "nc",
+  "lexer": "nesc"
+}, {
+  "name": "NewLisp",
+  "extension": "lsp",
+  "lexer": "newlisp"
+}, {
+  "name": "Newspeak",
+  "extension": "ns2",
+  "lexer": "newspeak"
+}, {
+  "name": "Angular2",
+  "extension": "",
+  "lexer": "ng2"
+}, {
+  "name": "Nginx configuration file",
+  "extension": "",
+  "lexer": "nginx"
+}, {
+  "name": "Nimrod",
+  "extension": "nim",
+  "lexer": "nim"
+}, {
+  "name": "Nit",
+  "extension": "nit",
+  "lexer": "nit"
+}, {
+  "name": "Nix",
+  "extension": "nix",
+  "lexer": "nixos"
+}, {
+  "name": "NSIS",
+  "extension": "nsi",
+  "lexer": "nsis"
+}, {
+  "name": "NumPy",
+  "extension": "",
+  "lexer": "numpy"
+}, {
+  "name": "NuSMV",
+  "extension": "smv",
+  "lexer": "nusmv"
+}, {
+  "name": "objdump-nasm",
+  "extension": "objdump-intel",
+  "lexer": "objdump-nasm"
+}, {
+  "name": "objdump",
+  "extension": "objdump",
+  "lexer": "objdump"
+}, {
+  "name": "Objective-C++",
+  "extension": "mm",
+  "lexer": "objective-c++"
+}, {
+  "name": "Objective-C",
+  "extension": "m",
+  "lexer": "objective-c"
+}, {
+  "name": "Objective-J",
+  "extension": "j",
+  "lexer": "objective-j"
+}, {
+  "name": "OCaml",
+  "extension": "ml",
+  "lexer": "ocaml"
+}, {
+  "name": "Octave",
+  "extension": "m",
+  "lexer": "octave"
+}, {
+  "name": "ODIN",
+  "extension": "odin",
+  "lexer": "odin"
+}, {
+  "name": "Ooc",
+  "extension": "ooc",
+  "lexer": "ooc"
+}, {
+  "name": "Opa",
+  "extension": "opa",
+  "lexer": "opa"
+}, {
+  "name": "OpenEdge ABL",
+  "extension": "p",
+  "lexer": "openedge"
+}, {
+  "name": "PacmanConf",
+  "extension": "",
+  "lexer": "pacmanconf"
+}, {
+  "name": "Pan",
+  "extension": "pan",
+  "lexer": "pan"
+}, {
+  "name": "ParaSail",
+  "extension": "psi",
+  "lexer": "parasail"
+}, {
+  "name": "Pawn",
+  "extension": "p",
+  "lexer": "pawn"
+}, {
+  "name": "Perl",
+  "extension": "pl",
+  "lexer": "perl"
+}, {
+  "name": "Perl6",
+  "extension": "pl",
+  "lexer": "perl6"
+}, {
+  "name": "PHP",
+  "extension": "php",
+  "lexer": "php"
+}, {
+  "name": "Pig",
+  "extension": "pig",
+  "lexer": "pig"
+}, {
+  "name": "Pike",
+  "extension": "pike",
+  "lexer": "pike"
+}, {
+  "name": "PkgConfig",
+  "extension": "pc",
+  "lexer": "pkgconfig"
+}, {
+  "name": "PL/pgSQL",
+  "extension": "",
+  "lexer": "plpgsql"
+}, {
+  "name": "PostgreSQL SQL dialect",
+  "extension": "",
+  "lexer": "postgresql"
+}, {
+  "name": "PostScript",
+  "extension": "ps",
+  "lexer": "postscript"
+}, {
+  "name": "Gettext Catalog",
+  "extension": "pot",
+  "lexer": "pot"
+}, {
+  "name": "POVRay",
+  "extension": "pov",
+  "lexer": "pov"
+}, {
+  "name": "PowerShell",
+  "extension": "ps1",
+  "lexer": "powershell"
+}, {
+  "name": "Praat",
+  "extension": "praat",
+  "lexer": "praat"
+}, {
+  "name": "Prolog",
+  "extension": "ecl",
+  "lexer": "prolog"
+}, {
+  "name": "Properties",
+  "extension": "properties",
+  "lexer": "properties"
+}, {
+  "name": "Protocol Buffer",
+  "extension": "proto",
+  "lexer": "protobuf"
+}, {
+  "name": "PowerShell Session",
+  "extension": "",
+  "lexer": "ps1con"
+}, {
+  "name": "PostgreSQL console (psql)",
+  "extension": "",
+  "lexer": "psql"
+}, {
+  "name": "Pug",
+  "extension": "pug",
+  "lexer": "pug"
+}, {
+  "name": "Puppet",
+  "extension": "pp",
+  "lexer": "puppet"
+}, {
+  "name": "Python 3.0 Traceback",
+  "extension": "py3tb",
+  "lexer": "py3tb"
+}, {
+  "name": "Python console session",
+  "extension": "",
+  "lexer": "pycon"
+}, {
+  "name": "PyPy Log",
+  "extension": "pypylog",
+  "lexer": "pypylog"
+}, {
+  "name": "Python Traceback",
+  "extension": "pytb",
+  "lexer": "pytb"
+}, {
+  "name": "Python",
+  "extension": "py",
+  "lexer": "python"
+}, {
+  "name": "Python 3",
+  "extension": "",
+  "lexer": "python3"
+}, {
+  "name": "QBasic",
+  "extension": "BAS",
+  "lexer": "qbasic"
+}, {
+  "name": "QML",
+  "extension": "qml",
+  "lexer": "qml"
+}, {
+  "name": "QVTO",
+  "extension": "qvto",
+  "lexer": "qvto"
+}, {
+  "name": "Racket",
+  "extension": "rkt",
+  "lexer": "racket"
+}, {
+  "name": "Ragel in C Host",
+  "extension": "rl",
+  "lexer": "ragel-c"
+}, {
+  "name": "Ragel in CPP Host",
+  "extension": "rl",
+  "lexer": "ragel-cpp"
+}, {
+  "name": "Ragel in D Host",
+  "extension": "rl",
+  "lexer": "ragel-d"
+}, {
+  "name": "Embedded Ragel",
+  "extension": "rl",
+  "lexer": "ragel-em"
+}, {
+  "name": "Ragel in Java Host",
+  "extension": "rl",
+  "lexer": "ragel-java"
+}, {
+  "name": "Ragel in Objective C Host",
+  "extension": "rl",
+  "lexer": "ragel-objc"
+}, {
+  "name": "Ragel in Ruby Host",
+  "extension": "rl",
+  "lexer": "ragel-ruby"
+}, {
+  "name": "Ragel",
+  "extension": "",
+  "lexer": "ragel"
+}, {
+  "name": "Raw token data",
+  "extension": "",
+  "lexer": "raw"
+}, {
+  "name": "Ruby",
+  "extension": "rb",
+  "lexer": "rb"
+}, {
+  "name": "Ruby irb session",
+  "extension": "",
+  "lexer": "rbcon"
+}, {
+  "name": "RConsole",
+  "extension": "Rout",
+  "lexer": "rconsole"
+}, {
+  "name": "Rd",
+  "extension": "Rd",
+  "lexer": "rd"
+}, {
+  "name": "REBOL",
+  "extension": "r",
+  "lexer": "rebol"
+}, {
+  "name": "Red",
+  "extension": "red",
+  "lexer": "red"
+}, {
+  "name": "Redcode",
+  "extension": "cw",
+  "lexer": "redcode"
+}, {
+  "name": "reg",
+  "extension": "reg",
+  "lexer": "registry"
+}, {
+  "name": "ResourceBundle",
+  "extension": "txt",
+  "lexer": "resource"
+}, {
+  "name": "Rexx",
+  "extension": "rexx",
+  "lexer": "rexx"
+}, {
+  "name": "RHTML",
+  "extension": "rhtml",
+  "lexer": "rhtml"
+}, {
+  "name": "Relax-NG Compact",
+  "extension": "rnc",
+  "lexer": "rnc"
+}, {
+  "name": "Roboconf Graph",
+  "extension": "graph",
+  "lexer": "roboconf-graph"
+}, {
+  "name": "Roboconf Instances",
+  "extension": "instances",
+  "lexer": "roboconf-instances"
+}, {
+  "name": "RobotFramework",
+  "extension": "txt",
+  "lexer": "robotframework"
+}, {
+  "name": "RQL",
+  "extension": "rql",
+  "lexer": "rql"
+}, {
+  "name": "RSL",
+  "extension": "rsl",
+  "lexer": "rsl"
+}, {
+  "name": "reStructuredText",
+  "extension": "rst",
+  "lexer": "rst"
+}, {
+  "name": "TrafficScript",
+  "extension": "rts",
+  "lexer": "rts"
+}, {
+  "name": "Rust",
+  "extension": "rs",
+  "lexer": "rust"
+}, {
+  "name": "SAS",
+  "extension": "SAS",
+  "lexer": "sas"
+}, {
+  "name": "Sass",
+  "extension": "sass",
+  "lexer": "sass"
+}, {
+  "name": "SuperCollider",
+  "extension": "sc",
+  "lexer": "sc"
+}, {
+  "name": "Scala",
+  "extension": "scala",
+  "lexer": "scala"
+}, {
+  "name": "Scaml",
+  "extension": "scaml",
+  "lexer": "scaml"
+}, {
+  "name": "Scheme",
+  "extension": "scm",
+  "lexer": "scheme"
+}, {
+  "name": "Scilab",
+  "extension": "sci",
+  "lexer": "scilab"
+}, {
+  "name": "SCSS",
+  "extension": "scss",
+  "lexer": "scss"
+}, {
+  "name": "Shen",
+  "extension": "shen",
+  "lexer": "shen"
+}, {
+  "name": "Silver",
+  "extension": "sil",
+  "lexer": "silver"
+}, {
+  "name": "Slim",
+  "extension": "slim",
+  "lexer": "slim"
+}, {
+  "name": "Smali",
+  "extension": "smali",
+  "lexer": "smali"
+}, {
+  "name": "Smalltalk",
+  "extension": "st",
+  "lexer": "smalltalk"
+}, {
+  "name": "Smarty",
+  "extension": "tpl",
+  "lexer": "smarty"
+}, {
+  "name": "Standard ML",
+  "extension": "sml",
+  "lexer": "sml"
+}, {
+  "name": "Snobol",
+  "extension": "snobol",
+  "lexer": "snobol"
+}, {
+  "name": "Snowball",
+  "extension": "sbl",
+  "lexer": "snowball"
+}, {
+  "name": "Debian Sourcelist",
+  "extension": "",
+  "lexer": "sourceslist"
+}, {
+  "name": "SourcePawn",
+  "extension": "sp",
+  "lexer": "sp"
+}, {
+  "name": "SPARQL",
+  "extension": "rq",
+  "lexer": "sparql"
+}, {
+  "name": "RPMSpec",
+  "extension": "spec",
+  "lexer": "spec"
+}, {
+  "name": "S",
+  "extension": "S",
+  "lexer": "splus"
+}, {
+  "name": "SQL",
+  "extension": "sql",
+  "lexer": "sql"
+}, {
+  "name": "sqlite3con",
+  "extension": "sqlite3-console",
+  "lexer": "sqlite3"
+}, {
+  "name": "SquidConf",
+  "extension": "",
+  "lexer": "squidconf"
+}, {
+  "name": "Scalate Server Page",
+  "extension": "ssp",
+  "lexer": "ssp"
+}, {
+  "name": "Stan",
+  "extension": "stan",
+  "lexer": "stan"
+}, {
+  "name": "Stata",
+  "extension": "do",
+  "lexer": "stata"
+}, {
+  "name": "Swift",
+  "extension": "swift",
+  "lexer": "swift"
+}, {
+  "name": "SWIG",
+  "extension": "swg",
+  "lexer": "swig"
+}, {
+  "name": "systemverilog",
+  "extension": "sv",
+  "lexer": "systemverilog"
+}, {
+  "name": "TADS 3",
+  "extension": "t",
+  "lexer": "tads3"
+}, {
+  "name": "TAP",
+  "extension": "tap",
+  "lexer": "tap"
+}, {
+  "name": "TASM",
+  "extension": "asm",
+  "lexer": "tasm"
+}, {
+  "name": "Tcl",
+  "extension": "tcl",
+  "lexer": "tcl"
+}, {
+  "name": "Tcsh",
+  "extension": "tcsh",
+  "lexer": "tcsh"
+}, {
+  "name": "Tcsh Session",
+  "extension": "",
+  "lexer": "tcshcon"
+}, {
+  "name": "Tea",
+  "extension": "tea",
+  "lexer": "tea"
+}, {
+  "name": "Termcap",
+  "extension": "",
+  "lexer": "termcap"
+}, {
+  "name": "Terminfo",
+  "extension": "",
+  "lexer": "terminfo"
+}, {
+  "name": "Terraform",
+  "extension": "tf",
+  "lexer": "terraform"
+}, {
+  "name": "TeX",
+  "extension": "tex",
+  "lexer": "tex"
+}, {
+  "name": "Text only",
+  "extension": "txt",
+  "lexer": "text"
+}, {
+  "name": "Thrift",
+  "extension": "thrift",
+  "lexer": "thrift"
+}, {
+  "name": "Todotxt",
+  "extension": "todotxt",
+  "lexer": "todotxt"
+}, {
+  "name": "MoinMoin/Trac Wiki markup",
+  "extension": "",
+  "lexer": "trac-wiki"
+}, {
+  "name": "Treetop",
+  "extension": "treetop",
+  "lexer": "treetop"
+}, {
+  "name": "TypeScript",
+  "extension": "ts",
+  "lexer": "ts"
+}, {
+  "name": "Transact-SQL",
+  "extension": "sql",
+  "lexer": "tsql"
+}, {
+  "name": "Turtle",
+  "extension": "ttl",
+  "lexer": "turtle"
+}, {
+  "name": "Twig",
+  "extension": "",
+  "lexer": "twig"
+}, {
+  "name": "TypoScript",
+  "extension": "ts",
+  "lexer": "typoscript"
+}, {
+  "name": "TypoScriptCssData",
+  "extension": "",
+  "lexer": "typoscriptcssdata"
+}, {
+  "name": "TypoScriptHtmlData",
+  "extension": "",
+  "lexer": "typoscripthtmldata"
+}, {
+  "name": "UrbiScript",
+  "extension": "u",
+  "lexer": "urbiscript"
+}, {
+  "name": "Vala",
+  "extension": "vala",
+  "lexer": "vala"
+}, {
+  "name": "VB.net",
+  "extension": "vb",
+  "lexer": "vb.net"
+}, {
+  "name": "VCL",
+  "extension": "vcl",
+  "lexer": "vcl"
+}, {
+  "name": "VCLSnippets",
+  "extension": "",
+  "lexer": "vclsnippets"
+}, {
+  "name": "VCTreeStatus",
+  "extension": "",
+  "lexer": "vctreestatus"
+}, {
+  "name": "Velocity",
+  "extension": "vm",
+  "lexer": "velocity"
+}, {
+  "name": "verilog",
+  "extension": "v",
+  "lexer": "verilog"
+}, {
+  "name": "VGL",
+  "extension": "rpf",
+  "lexer": "vgl"
+}, {
+  "name": "vhdl",
+  "extension": "vhdl",
+  "lexer": "vhdl"
+}, {
+  "name": "VimL",
+  "extension": "vim",
+  "lexer": "vim"
+}, {
+  "name": "WDiff",
+  "extension": "wdiff",
+  "lexer": "wdiff"
+}, {
+  "name": "Whiley",
+  "extension": "whiley",
+  "lexer": "whiley"
+}, {
+  "name": "X10",
+  "extension": "x10",
+  "lexer": "x10"
+}, {
+  "name": "XML+Cheetah",
+  "extension": "",
+  "lexer": "xml+cheetah"
+}, {
+  "name": "XML+Django/Jinja",
+  "extension": "",
+  "lexer": "xml+django"
+}, {
+  "name": "XML+Ruby",
+  "extension": "",
+  "lexer": "xml+erb"
+}, {
+  "name": "XML+Evoque",
+  "extension": "xml",
+  "lexer": "xml+evoque"
+}, {
+  "name": "XML+Lasso",
+  "extension": "",
+  "lexer": "xml+lasso"
+}, {
+  "name": "XML+Mako",
+  "extension": "",
+  "lexer": "xml+mako"
+}, {
+  "name": "XML+Myghty",
+  "extension": "",
+  "lexer": "xml+myghty"
+}, {
+  "name": "XML+PHP",
+  "extension": "",
+  "lexer": "xml+php"
+}, {
+  "name": "XML+Smarty",
+  "extension": "",
+  "lexer": "xml+smarty"
+}, {
+  "name": "XML+Velocity",
+  "extension": "",
+  "lexer": "xml+velocity"
+}, {
+  "name": "XML",
+  "extension": "xml",
+  "lexer": "xml"
+}, {
+  "name": "XQuery",
+  "extension": "xqy",
+  "lexer": "xquery"
+}, {
+  "name": "XSLT",
+  "extension": "xsl",
+  "lexer": "xslt"
+}, {
+  "name": "Xtend",
+  "extension": "xtend",
+  "lexer": "xtend"
+}, {
+  "name": "XUL+mozpreproc",
+  "extension": "xul",
+  "lexer": "xul+mozpreproc"
+}, {
+  "name": "YAML+Jinja",
+  "extension": "sls",
+  "lexer": "yaml+jinja"
+}, {
+  "name": "YAML",
+  "extension": "yaml",
+  "lexer": "yaml"
+}, {
+  "name": "Zephir",
+  "extension": "zep",
+  "lexer": "zephir"
+}]
