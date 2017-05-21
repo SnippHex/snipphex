@@ -7,7 +7,12 @@ const router = express.Router()
 
 router.get('/syntax', async (req, res) => {
   try {
-    const syntaxes = await syntaxService.all()
+    const syntaxes = await syntaxService.all().map(v => ({
+      id: v.id,
+      name: v.name,
+      extension: v.extension,
+    }))
+
     res.json({ data: syntaxes })
   } catch (err) {
     logger.error('Route failed /syntax', { err })
