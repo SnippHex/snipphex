@@ -583,6 +583,10 @@
   "extension": "s",
   "lexer": "gas"
 }, {
+  "name": "GDScript",
+  "extension": "gd",
+  "lexer": "gdscript"
+}, {
   "name": "Genshi",
   "extension": "kid",
   "lexer": "genshi"
