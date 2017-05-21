@@ -4,6 +4,7 @@ const path = require('path')
 const pygmentize = path.join(ROOT, 'pygments', 'pygmentize')
 const formatterFile = 'pygment_formatter.py'
 const wrapperClassName = 's_h'
+const encoding = 'utf8'
 
 async function getThemeCss(name) {
   const args = [
@@ -19,7 +20,7 @@ async function generateHtml(filePath, style, lexerArg) {
   const lexer = lexerArg || 'text'
 
   const args = [
-    '-O', `style=${style}`,
+    '-O', `encoding=${encoding},style=${style}`,
     '-l', lexer,
     '-f', formatterFile,
     '-x',
