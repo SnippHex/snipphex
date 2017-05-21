@@ -1,9 +1,12 @@
 const express = require('express')
 const logger = require('src/logger')
 const bodyParser = require('body-parser')
+const helmet = require('helmet')
 
 const app = express()
 const port = process.env.PORT || 3000
+
+app.use(helmet())
 
 app.use((req, res, next) => {
   res.sendError = (error) => {
