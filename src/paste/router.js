@@ -43,7 +43,7 @@ router.put('/paste', async (req, res) => {
 
   let id
   try {
-    await pasteService.create({ title, visibility, syntaxId }) // Persist meta
+    await pasteService.create({ title, visibility, syntaxId, size: contentUtf8.length }) // Persist meta
       .then((insertId) => {
         id = insertId
         // Persist content

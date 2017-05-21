@@ -21,13 +21,16 @@ async function getByKey(key) {
 
 async function create(data) {
   return new Promise((resolve, reject) => {
-    db.run('INSERT INTO paste (title, visibility, syntax_id) VALUES (?, ?, ?)', [data.title, data.visibility, data.syntaxId], function createCb(err) {
-      if (err) {
-        return reject(err)
-      }
+    db.run(
+      'INSERT INTO paste (title, visibility, syntax_id, size) VALUES (?, ?, ?, ?)',
+      [data.title, data.visibility, data.syntaxId, data.size],
+      function createCb(err) {
+        if (err) {
+          return reject(err)
+        }
 
-      resolve(this.lastID)
-    })
+        resolve(this.lastID)
+      })
   })
 }
 
