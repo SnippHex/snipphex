@@ -32,5 +32,8 @@
     "eslint-plugin-mocha": "^4.9.0",
     "eslint-plugin-react": "^7.0.1",
     "mocha": "^3.4.1"
+  },
+  "engines": {
+    "node": "7.10.0"
   }
 }
