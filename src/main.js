@@ -5,6 +5,12 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = process.env.PORT || 3000
 
+app.use((req, res, next) => {
+  res.sendError = (error) => {
+    res.status(error.statusCode).json(error.body)
+  }
+  next()
+})
 app.use(bodyParser.json({ limit: '10mb' }))
 app.use(require('src/paste/router'))
 app.use(require('src/syntax/router'))

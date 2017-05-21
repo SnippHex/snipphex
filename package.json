@@ -18,6 +18,7 @@
     "fs-extra": "^3.0.1",
     "moment": "^2.18.1",
     "promisify-node": "^0.4.0",
+    "restify-errors": "^4.3.0",
     "sqlite3": "^3.1.8",
     "winston": "^2.3.1"
   },
