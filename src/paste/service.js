@@ -24,6 +24,7 @@ module.exports = {
   getSizeOfContent: content.size,
   getContent: content.get,
   putContent: content.put,
+  getContentPath: content.generateFullPath,
 
   includeSyntax: async (paste) => {
     let syntax

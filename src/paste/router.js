@@ -90,4 +90,17 @@ router.get('/paste/:key/content/html', async (req, res) => {
   }
 })
 
+router.get('/paste/:key/content/raw', async (req, res) => {
+  try {
+    const paste = await pasteService.getByKey(req.params.key)
+    if (!paste) {
+      return res.sendError(new errors.NotFoundError('Paste not found'))
+    }
+    res.sendFile(pasteService.getContentPath(paste.id))
+  } catch (err) {
+    logger.error('Route failed /paste/:key/content/raw', { err, key: req.params.key })
+    res.sendError(new errors.InternalServerError('Failed to fetch content'))
+  }
+})
+
 module.exports = router
