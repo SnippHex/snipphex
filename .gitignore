@@ -1,5 +1,16 @@
+# Node
 node_modules
+
+# Environment file
 .env
+
+# Data dir
 /data
 !/data/.gitkeep
+
+# Pygments
 /pygments
+
+# Logs dir
+/logs
+!/logs/.gitkeep
