@@ -1,4 +1,8 @@
 [{
+  "name": "None",
+  "extension": "txt",
+  "lexer": "text"
+}, {
   "name": "ABAP",
   "extension": "abap",
   "lexer": "abap"

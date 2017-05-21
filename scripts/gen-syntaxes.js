@@ -9,7 +9,12 @@ async function doIt() {
   const out = await pygments.exec(['-L', 'lexers'])
   const lines = out.split(os.EOL).slice(4, -1)
 
-  const results = []
+  const results = [{
+    name: 'None',
+    extension: 'txt',
+    lexer: 'text',
+  }]
+
   for (let i = 0; i < lines.length; i += 2) {
     const lexers = lines[i]
     const meta = lines[i + 1]
