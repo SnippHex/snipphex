@@ -22,6 +22,16 @@ async function getByKey(key) {
   return getById(id)
 }
 
+async function getLatests(limit) {
+  return db.allAsync(`
+    SELECT paste.id as id, title, syntax.name as syntaxName, created_at as createdAt, size
+    FROM paste
+    JOIN syntax ON syntax.id = paste.syntax_id
+    ORDER BY createdAt DESC
+    LIMIT ${limit}
+    `).then(rows => rows.map(mapRow))
+}
+
 async function create(data) {
   return new Promise((resolve, reject) => {
     db.run(
@@ -40,5 +50,6 @@ async function create(data) {
 module.exports = {
   getById,
   getByKey,
+  getLatests,
   create,
 }

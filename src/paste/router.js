@@ -6,6 +6,8 @@ const errors = require('restify-errors')
 
 const router = express.Router()
 
+const LATEST_CPS_LIMIT = process.env.LATEST_CPS_LIMIT || 10
+
 router.put('/paste', async (req, res) => {
   const title = req.body.title || pasteService.DEFAULT_TITLE
   const visibility = req.body.visibility || pasteService.DEFAULT_VISIBILITY
@@ -56,6 +58,17 @@ router.put('/paste', async (req, res) => {
   }
 
   res.json({ data: { key: pasteService.encodeId(id) } })
+})
+
+router.get('/paste/latests', async (req, res) => {
+  try {
+    const pastes = await pasteService.getLatests(LATEST_CPS_LIMIT)
+
+    res.json({ data: pastes })
+  } catch (err) {
+    logger.error('Route failed /paste/latests', { err })
+    res.sendError(new errors.InternalServerError('Failed to fetch latest cps'))
+  }
 })
 
 router.get('/paste/:key', async (req, res) => {
