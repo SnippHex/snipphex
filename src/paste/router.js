@@ -80,7 +80,6 @@ router.get('/paste/:key', async (req, res) => {
       return res.sendError(new errors.NotFoundError('Paste not found'))
     }
     await pasteService.includeSyntax(paste)
-    paste.size = await pasteService.getSizeOfContent(paste.id)
 
     res.json({ data: paste })
   } catch (err) {
