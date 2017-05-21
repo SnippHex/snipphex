@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 })
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', process.env.FRONTEND_URL)
+  res.header('Access-Control-Allow-Origin', process.env.ALLOW_ORIGIN)
   res.header('Access-Control-Allow-Headers', 'X-Requested-With,Accept,Content-Type')
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST')
   next()
