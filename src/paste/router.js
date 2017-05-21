@@ -2,29 +2,26 @@ const express = require('express')
 const pasteService = require('./service')
 const syntaxService = require('src/syntax/service')
 const logger = require('src/logger')
+const errors = require('restify-errors')
 
 const router = express.Router()
 
 router.put('/paste', async (req, res) => {
-  const title = req.body.title
-  const visibility = req.body.visibility
-  const syntaxId = req.body.syntaxId || 1
+  const title = req.body.title || pasteService.DEFAULT_TITLE
+  const visibility = req.body.visibility || pasteService.DEFAULT_VISIBILITY
+  const syntaxId = req.body.syntaxId || pasteService.DEFAULT_SYNTAX_ID
   const content = req.body.content
-
-  // TODO: Title constraint / default
-  // TODO: Visibility constraint / default
 
   // Make sure we have all parameters
   if (typeof title !== 'string' || typeof visibility !== 'number' || typeof syntaxId !== 'number' || typeof content !== 'string') {
-    // TODO: Status and error
-    return res.json({ error: { code: 1, message: 'parameters' } })
+    return res.sendError(new errors.MissingParameterError('Not enough parameters'))
   }
 
   // Check for syntax
   const syntax = await syntaxService.getById(syntaxId)
   if (!syntax) {
     // TODO: Status and error
-    return res.json({ error: { code: 3, message: 'syntax' } })
+    return res.sendError(new errors.InvalidArgumentError('Binary files are not allowed'))
   }
 
   // Make sure content is not binary
@@ -39,8 +36,7 @@ router.put('/paste', async (req, res) => {
 
   const isContentBinary = nulls > 0
   if (isContentBinary) {
-    // TODO: Status and error
-    return res.json({ error: { code: 2, message: 'binary' } })
+    return res.sendError(new errors.InvalidContentError('Binary files are not allowed'))
   }
 
   const contentUtf8 = contentBuffer.toString('utf8')
@@ -53,11 +49,10 @@ router.put('/paste', async (req, res) => {
         // Persist content
         pasteService.putContent(id, contentUtf8)
       })
-  } catch (e) {
+  } catch (err) {
     // Failed to persist
-    // TODO: status and error
-    logger.error(e)
-    return res.json({ error: { code: 4, message: 'persist' } })
+    logger.error('Failed to persist meta or content', { err, title, visibility, syntaxId, content })
+    res.sendError(new errors.InternalServerError('Failed to fetch paste'))
   }
 
   res.json({ data: { key: pasteService.encodeId(id) } })
@@ -69,25 +64,30 @@ router.get('/paste/:key', async (req, res) => {
   try {
     const paste = await pasteService.getByKey(key)
     if (!paste) {
-      return res.status(404).json({ code: 404, message: 'Paste not found' })
+      return res.sendError(new errors.NotFoundError('Paste not found'))
     }
     await pasteService.includeSyntax(paste)
     paste.size = await pasteService.getSizeOfContent(paste.id)
 
     res.json({ data: paste })
-  } catch (e) {
-    logger.error(e)
-    res.status(500).json({ code: 500, message: 'Failed to fetch paste' })
+  } catch (err) {
+    logger.error('Route failed /paste/:key/content/html', { err, key: req.params.key })
+    res.sendError(new errors.InternalServerError('Failed to fetch paste'))
   }
 })
 
 router.get('/paste/:key/content/html', async (req, res) => {
-  const paste = await pasteService.getByKey(req.params.key)
-  if (!paste) {
-    return res.status(404).json({ code: 404, message: 'Paste not found' })
+  try {
+    const paste = await pasteService.getByKey(req.params.key)
+    if (!paste) {
+      return res.sendError(new errors.NotFoundError('Paste not found'))
+    }
+    await pasteService.includeSyntax(paste)
+    res.send(await pasteService.generateHtml(paste))
+  } catch (err) {
+    logger.error('Route failed /paste/:key/content/html', { err, key: req.params.key })
+    res.sendError(new errors.InternalServerError('Failed to fetch content'))
   }
-  await pasteService.includeSyntax(paste)
-  res.send(await pasteService.generateHtml(paste))
 })
 
 module.exports = router
