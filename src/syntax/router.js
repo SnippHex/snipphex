@@ -7,7 +7,7 @@ const router = express.Router()
 
 router.get('/syntax', async (req, res) => {
   try {
-    const syntaxes = await syntaxService.all().map(v => ({
+    const syntaxes = (await syntaxService.all()).map(v => ({
       id: v.id,
       name: v.name,
       extension: v.extension,
