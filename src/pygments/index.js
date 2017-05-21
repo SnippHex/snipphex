@@ -1,7 +1,7 @@
 const execFile = require('child_process').execFile
 const path = require('path')
 
-const pygmentize = path.join(ROOT, 'pygments', 'pygmentize')
+const pygmentize = path.join(ROOT, 'pygmentize')
 const formatterFile = 'pygment_formatter.py'
 const wrapperClassName = 's_h'
 const encoding = 'utf8'
