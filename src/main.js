@@ -11,6 +11,14 @@ app.use((req, res, next) => {
   }
   next()
 })
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', process.env.FRONTEND_URL)
+  res.header('Access-Control-Allow-Headers', 'X-Requested-With,Accept,Content-Type')
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST')
+  next()
+})
+
 app.use(bodyParser.json({ limit: '10mb' }))
 app.use(require('src/paste/router'))
 app.use(require('src/syntax/router'))
