@@ -5,6 +5,7 @@ const pygmentize = path.join(ROOT, 'pygmentize')
 const formatterFile = 'pygment_formatter.py'
 const wrapperClassName = 's_h'
 const encoding = 'utf8'
+const maxBuffer = 1024 * 1024 * 32 // 32 megabytes
 
 async function getThemeCss(name) {
   const args = [
@@ -32,7 +33,7 @@ async function generateHtml(filePath, style, lexerArg) {
 
 async function execPygmentize(args) {
   return new Promise((resolve, reject) => {
-    execFile('python', [pygmentize, ...args], (err, stdout) => {
+    execFile('python', [pygmentize, ...args], { maxBuffer }, (err, stdout) => {
       if (err) {
         return reject(err)
       }
