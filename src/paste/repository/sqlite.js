@@ -5,9 +5,8 @@ const pasteKeyCoder = require('src/paste/key-coder')
 function mapRow(row) {
   if (row) {
     row.createdAt = moment.utc(row.createdAt).unix()
+    row.key = pasteKeyCoder.encode(row.id)
   }
-
-  row.key = pasteKeyCoder.encode(row.id)
 
   return row
 }
