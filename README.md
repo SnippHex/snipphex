@@ -5,8 +5,8 @@
 # Installation
 
 ```
-git clone https://github.com/david-szabo97/cp-vault.git
-cd cp-vault
+git clone https://github.com/david-szabo97/cpvault.git
+cd cpvault
 ```
 
 Copy the `.env.example` and rename the new file to `.env`. Open the `.env` in your favorite code editor and tweak the variables to your needs.
