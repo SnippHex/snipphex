@@ -12,7 +12,7 @@ function mapRow(row) {
 }
 
 async function getById(id) {
-  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt, size FROM paste WHERE id = ?', [id]).then(mapRow)
+  return db.getAsync('SELECT id, title, visibility, syntax_id as syntaxId, created_at as createdAt, size, lines FROM paste WHERE id = ?', [id]).then(mapRow)
 }
 
 async function getByKey(key) {
@@ -34,8 +34,8 @@ async function getLatests(limit) {
 async function create(data) {
   return new Promise((resolve, reject) => {
     db.run(
-      'INSERT INTO paste (title, visibility, syntax_id, size) VALUES (?, ?, ?, ?)',
-      [data.title, data.visibility, data.syntaxId, data.size],
+      'INSERT INTO paste (title, visibility, syntax_id, size, lines) VALUES (?, ?, ?, ?, ?)',
+      [data.title, data.visibility, data.syntaxId, data.size, data.lines],
       function createCb(err) {
         if (err) {
           return reject(err)

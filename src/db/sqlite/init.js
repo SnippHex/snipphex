@@ -6,6 +6,7 @@ module.exports = async function init(db) {
       '`visibility` INTEGER NOT NULL DEFAULT 0,' +
       '`syntax_id` INTEGER NOT NULL,' +
       '`size` INTEGER NOT NULL,' +
+      '`lines` INTEGER NOT NULL,' +
       '`created_at` INTEGER NOT NULL DEFAULT CURRENT_TIMESTAMP )'),
 
     db.runAsync('CREATE TABLE IF NOT EXISTS `syntax`' +

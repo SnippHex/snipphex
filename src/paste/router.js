@@ -3,6 +3,7 @@ const pasteService = require('./service')
 const syntaxService = require('src/syntax/service')
 const logger = require('src/logger')
 const errors = require('restify-errors')
+const countLines = require('src/util/countlines')
 
 const router = express.Router()
 
@@ -42,10 +43,11 @@ router.put('/paste', async (req, res) => {
   }
 
   const contentUtf8 = contentBuffer.toString('utf8')
+  const lines = countLines(contentBuffer)
 
   let id
   try {
-    await pasteService.create({ title, visibility, syntaxId, size: contentUtf8.length }) // Persist meta
+    await pasteService.create({ title, visibility, syntaxId, size: contentUtf8.length, lines }) // Persist meta
       .then((insertId) => {
         id = insertId
         // Persist content
