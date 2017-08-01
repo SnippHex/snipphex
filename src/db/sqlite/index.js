@@ -9,5 +9,7 @@ const fileName = 'db.db'
 module.exports = function create() {
   const db = new sqlite3.Database(path.join(ROOT, 'data', fileName))
 
+  db._finish = function _finish() {}
+
   return db
 }

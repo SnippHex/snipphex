@@ -1,5 +1,5 @@
 require('../bootstrap')
-require('src/db')
+const db = require('src/db')
 const initPromise = require('src/db/init')
 const syntaxService = require('src/syntax/service')
 const syntaxes = require('./data/syntaxes')
@@ -15,4 +15,4 @@ async function initDb() {
   }
 }
 
-initDb()
+initDb().then(() => db._finish())

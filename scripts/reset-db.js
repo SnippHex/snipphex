@@ -1,3 +1,3 @@
 require('../bootstrap')
-require('src/db')
-require('src/db/reset')
+const db = require('src/db')
+require('src/db/reset').then(() => db._finish())
