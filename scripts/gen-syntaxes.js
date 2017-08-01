@@ -24,25 +24,36 @@ async function doIt() {
       const fileNamesIndex = meta.indexOf('(filenames')
       const name = (fileNamesIndex !== -1) ? meta.substring(0, fileNamesIndex).trim() : meta.trim()
 
-      let extension = meta.match(/(\*\.[^.,)]{0,})/gi)
-      if (!extension) {
-        extension = ''
-      } else {
-        extension = extension[0]
-
-        // This seems redundant because of the regex, but hey...
-        if (extension.indexOf('*.') === -1) {
-          extension = ''
-        } else {
-          extension = extension.substr(2)
+      // Skip syntaxes with + in them
+      let isValid = true
+      const plusPos = name.indexOf('+')
+      if (plusPos !== -1) {
+        if (name.charAt(plusPos + 1) !== '+') {
+          isValid = false
         }
       }
 
-      results.push({
-        name,
-        extension,
-        lexer,
-      })
+      if (isValid) {
+        let extension = meta.match(/(\*\.[^.,)]{0,})/gi)
+        if (!extension) {
+          extension = ''
+        } else {
+          extension = extension[0]
+
+          // This seems redundant because of the regex, but hey...
+          if (extension.indexOf('*.') === -1) {
+            extension = ''
+          } else {
+            extension = extension.substr(2)
+          }
+        }
+
+        results.push({
+          name,
+          extension,
+          lexer,
+        })
+      }
     }
   }
 

@@ -355,42 +355,6 @@
   "extension": "sco",
   "lexer": "csound-score"
 }, {
-  "name": "CSS+Django/Jinja",
-  "extension": "",
-  "lexer": "css+django"
-}, {
-  "name": "CSS+Ruby",
-  "extension": "",
-  "lexer": "css+erb"
-}, {
-  "name": "CSS+Genshi Text",
-  "extension": "",
-  "lexer": "css+genshitext"
-}, {
-  "name": "CSS+Lasso",
-  "extension": "",
-  "lexer": "css+lasso"
-}, {
-  "name": "CSS+Mako",
-  "extension": "",
-  "lexer": "css+mako"
-}, {
-  "name": "CSS+mozpreproc",
-  "extension": "css",
-  "lexer": "css+mozpreproc"
-}, {
-  "name": "CSS+Myghty",
-  "extension": "",
-  "lexer": "css+myghty"
-}, {
-  "name": "CSS+PHP",
-  "extension": "",
-  "lexer": "css+php"
-}, {
-  "name": "CSS+Smarty",
-  "extension": "",
-  "lexer": "css+smarty"
-}, {
   "name": "CSS",
   "extension": "css",
   "lexer": "css"
@@ -655,58 +619,6 @@
   "extension": "hsail",
   "lexer": "hsail"
 }, {
-  "name": "HTML+Cheetah",
-  "extension": "",
-  "lexer": "html+cheetah"
-}, {
-  "name": "HTML+Django/Jinja",
-  "extension": "",
-  "lexer": "html+django"
-}, {
-  "name": "HTML+Evoque",
-  "extension": "html",
-  "lexer": "html+evoque"
-}, {
-  "name": "HTML+Genshi",
-  "extension": "",
-  "lexer": "html+genshi"
-}, {
-  "name": "HTML+Handlebars",
-  "extension": "handlebars",
-  "lexer": "html+handlebars"
-}, {
-  "name": "HTML+Lasso",
-  "extension": "",
-  "lexer": "html+lasso"
-}, {
-  "name": "HTML+Mako",
-  "extension": "",
-  "lexer": "html+mako"
-}, {
-  "name": "HTML+Myghty",
-  "extension": "",
-  "lexer": "html+myghty"
-}, {
-  "name": "HTML + Angular2",
-  "extension": "ng2",
-  "lexer": "html+ng2"
-}, {
-  "name": "HTML+PHP",
-  "extension": "phtml",
-  "lexer": "html+php"
-}, {
-  "name": "HTML+Smarty",
-  "extension": "",
-  "lexer": "html+smarty"
-}, {
-  "name": "HTML+Twig",
-  "extension": "twig",
-  "lexer": "html+twig"
-}, {
-  "name": "HTML+Velocity",
-  "extension": "",
-  "lexer": "html+velocity"
-}, {
   "name": "HTML",
   "extension": "html",
   "lexer": "html"
@@ -791,10 +703,6 @@
   "extension": "java",
   "lexer": "java"
 }, {
-  "name": "Javascript+mozpreproc",
-  "extension": "js",
-  "lexer": "javascript+mozpreproc"
-}, {
   "name": "JCL",
   "extension": "jcl",
   "lexer": "jcl"
@@ -802,42 +710,6 @@
   "name": "Julia console",
   "extension": "",
   "lexer": "jlcon"
-}, {
-  "name": "JavaScript+Cheetah",
-  "extension": "",
-  "lexer": "js+cheetah"
-}, {
-  "name": "JavaScript+Django/Jinja",
-  "extension": "",
-  "lexer": "js+django"
-}, {
-  "name": "JavaScript+Ruby",
-  "extension": "",
-  "lexer": "js+erb"
-}, {
-  "name": "JavaScript+Genshi Text",
-  "extension": "",
-  "lexer": "js+genshitext"
-}, {
-  "name": "JavaScript+Lasso",
-  "extension": "",
-  "lexer": "js+lasso"
-}, {
-  "name": "JavaScript+Mako",
-  "extension": "",
-  "lexer": "js+mako"
-}, {
-  "name": "JavaScript+Myghty",
-  "extension": "",
-  "lexer": "js+myghty"
-}, {
-  "name": "JavaScript+PHP",
-  "extension": "",
-  "lexer": "js+php"
-}, {
-  "name": "JavaScript+Smarty",
-  "extension": "",
-  "lexer": "js+smarty"
 }, {
   "name": "JavaScript",
   "extension": "js",
@@ -1671,46 +1543,6 @@
   "extension": "x10",
   "lexer": "x10"
 }, {
-  "name": "XML+Cheetah",
-  "extension": "",
-  "lexer": "xml+cheetah"
-}, {
-  "name": "XML+Django/Jinja",
-  "extension": "",
-  "lexer": "xml+django"
-}, {
-  "name": "XML+Ruby",
-  "extension": "",
-  "lexer": "xml+erb"
-}, {
-  "name": "XML+Evoque",
-  "extension": "xml",
-  "lexer": "xml+evoque"
-}, {
-  "name": "XML+Lasso",
-  "extension": "",
-  "lexer": "xml+lasso"
-}, {
-  "name": "XML+Mako",
-  "extension": "",
-  "lexer": "xml+mako"
-}, {
-  "name": "XML+Myghty",
-  "extension": "",
-  "lexer": "xml+myghty"
-}, {
-  "name": "XML+PHP",
-  "extension": "",
-  "lexer": "xml+php"
-}, {
-  "name": "XML+Smarty",
-  "extension": "",
-  "lexer": "xml+smarty"
-}, {
-  "name": "XML+Velocity",
-  "extension": "",
-  "lexer": "xml+velocity"
-}, {
   "name": "XML",
   "extension": "xml",
   "lexer": "xml"
@@ -1726,14 +1558,6 @@
   "name": "Xtend",
   "extension": "xtend",
   "lexer": "xtend"
-}, {
-  "name": "XUL+mozpreproc",
-  "extension": "xul",
-  "lexer": "xul+mozpreproc"
-}, {
-  "name": "YAML+Jinja",
-  "extension": "sls",
-  "lexer": "yaml+jinja"
 }, {
   "name": "YAML",
   "extension": "yaml",
