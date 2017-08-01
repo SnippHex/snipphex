@@ -6,5 +6,5 @@ module.exports = function countLines(buffer) {
     count++
   }
 
-  return count
+  return (!count) ? 1 : count
 }
