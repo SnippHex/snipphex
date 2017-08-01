@@ -5,6 +5,7 @@ const keyCoder = require('./key-coder')
 const pygmentsGenerateHtml = require('src/pygments').generateHtml
 
 const VISIBILITY_PUBLIC = 0
+const VISIBILITY_UNLISTED = 1
 
 const DEFAULT_TITLE = 'cp'
 const DEFAULT_VISIBILITY = VISIBILITY_PUBLIC
@@ -21,7 +22,15 @@ module.exports = {
   getById: repo.getById,
   getByKey: repo.getByKey,
   getLatests: repo.getLatests,
-  create: repo.create,
+  create: async (paste) => {
+    if (!paste.visibility ||
+        paste.visibility !== VISIBILITY_PUBLIC &&
+        paste.visibility !== VISIBILITY_UNLISTED) {
+      paste.visibility = DEFAULT_VISIBILITY
+    }
+
+    return repo.create(paste)
+  },
   getSizeOfContent: content.size,
   getContent: content.get,
   putContent: content.put,
@@ -46,6 +55,7 @@ module.exports = {
   generateHtml,
 
   VISIBILITY_PUBLIC,
+  VISIBILITY_UNLISTED,
 
   DEFAULT_TITLE,
   DEFAULT_VISIBILITY,
