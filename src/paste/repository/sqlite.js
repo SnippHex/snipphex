@@ -2,6 +2,8 @@ const moment = require('moment')
 const db = require('src/db')
 const pasteKeyCoder = require('src/paste/key-coder')
 
+const LATESTS_VISIBILITY = 0
+
 function mapRow(row) {
   if (row) {
     row.createdAt = moment.utc(row.createdAt).unix()
@@ -26,6 +28,7 @@ async function getLatests(limit) {
     SELECT paste.id as id, title, syntax.name as syntaxName, created_at as createdAt, size
     FROM paste
     JOIN syntax ON syntax.id = paste.syntax_id
+    WHERE paste.visibility = ${LATESTS_VISIBILITY}
     ORDER BY createdAt DESC
     LIMIT ${limit}
     `).then(rows => rows.map(mapRow))
