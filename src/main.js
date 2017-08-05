@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(bodyParser.json({ limit: '10mb' }))
+app.use(bodyParser.json({ limit: process.env.JSON_REQUEST_SIZE_LIMIT || '1mb' }))
 app.use(require('src/paste/router'))
 app.use(require('src/syntax/router'))
 app.use(require('src/theme/router'))
