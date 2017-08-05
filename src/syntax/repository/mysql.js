@@ -1,7 +1,7 @@
 const db = require('src/db')
 
 async function all() {
-  return db.allAsync('SELECT id, name, extension, lexer from syntax').then(rows => rows)
+  return db.queryAsync('SELECT id, name, extension, lexer from syntax').then(results => results)
 }
 
 async function getById(id) {
