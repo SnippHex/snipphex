@@ -7,7 +7,7 @@ const pygmentsGenerateHtml = require('src/pygments').generateHtml
 const VISIBILITY_PUBLIC = 0
 const VISIBILITY_UNLISTED = 1
 
-const DEFAULT_TITLE = 'cp'
+const DEFAULT_TITLE = 'snipp'
 const DEFAULT_VISIBILITY = VISIBILITY_PUBLIC
 const DEFAULT_SYNTAX_ID = 1
 
