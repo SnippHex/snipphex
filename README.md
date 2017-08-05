@@ -1,12 +1,12 @@
-# SnippEX (Snippet Hex)
+# SnippHex (Snippet Hex)
 > A simple API written in Node.js for storing snippets.
 ---
 
 # Installation
 
 ```
-git clone https://github.com/david-szabo97/snippex.git
-cd snippex
+git clone https://github.com/david-szabo97/snipphex.git
+cd snipphex
 ```
 
 Copy the `.env.example` and rename the new file to `.env`. Open the `.env` in your favorite code editor and tweak the variables to your needs.
