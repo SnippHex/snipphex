@@ -41,6 +41,10 @@ app.use(require('src/paste/router'))
 app.use(require('src/syntax/router'))
 app.use(require('src/theme/router'))
 
-app.listen(port, () => {
+app.listen({
+  port,
+  key: process.env.SSL_PRIVATE_KEY_PATH || undefined,
+  cert: process.env.SSL_CERTIFICATE_PATH || undefined,
+}, () => {
   logger.info(`HTTP Server listening on port ${port}!`)
 })
